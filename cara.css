@@ -1,0 +1,51 @@
+html, body {
+    background: #f001;
+  }
+  
+  .cartoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .hb::before,
+.ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+  /****/
+  .cartoon {
+    --line: #000;
+  }
+  
+  
+  .multi {
+    width: 20%;
+    height: 20%;
+    top: 36%;
+    left: 21.5%;
+    background: var(--shirt);
+    box-shadow: -8.75vmin -4.75vmin 0 0.25vmin var(--line), 30vmin 0 0 -1.5vmin var(--shirt), 38.75vmin -4.75vmin 0 0.25vmin var(--line), 30vmin 0 var(--line), 0.5vmin 27vmin 0 -6vmin var(--skin), 0.5vmin 27vmin 0 -4.5vmin var(--line), 29.5vmin 27vmin 0 -6vmin var(--skin), 29.5vmin 27vmin 0 -4.5vmin var(--line), 10.5vmin 38vmin 0 -4.5vmin, 19.5vmin 38vmin 0 -4.5vmin;
+  }
+  
+  
+  .legs {
+    width: 40%;
+    height: 40%;
+    background: var(--line);
+    bottom: 0%;
+    left: 30%;
+    clip-path: polygon(24% 50%, 25.75% 85%, 47.5% 85%, 50% 50%, 53.75% 85%, 75.6% 85%, 79% 50%)
+  }
+  
+  
+  

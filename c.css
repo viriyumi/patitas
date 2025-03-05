@@ -1,0 +1,110 @@
+html, body {
+    overflow: hidden;
+    background: rgba(235, 222, 53, 0.4);
+  }
+  .cartoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .b {
+    border: 0.5vmin solid;
+  }
+  
+  .r {
+    border-radius: 100%;
+  }
+  
+  .hb::before,
+  .ha::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  /****/
+  .cartoon {
+    --fur: #222;
+  
+    --pants: #69c;
+  }
+  
+ 
+  
+  
+ 
+  
+  .body::after {
+    width: 30%;
+    height: 100%;
+    right: -20%;
+    background: var(--shirt);
+    transform: skewX(3deg);
+    transform-origin: bottom left;
+  }
+  
+  .shorts {
+    width: 10%;
+    height: 5%;
+    background: var(--pants);
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .shorts::before {
+    width: 60%;
+    height: 490%;
+    background: var(--pants);
+    transform-origin: top left;
+    transform: skewX(-5deg)
+  }
+  
+  .shorts::after {
+    right: 0;
+    width: 60%;
+    height: 490%;
+    background: var(--pants);
+    transform-origin: top right;
+    transform: skewX(5deg)
+  }
+  
+  .shoe {
+    width: 9%;
+    height: 4%;
+    background: var(--fur);
+    border-radius: 100% 50% 0 0;
+    bottom: 0;
+    left: 40%;
+    transform: skewX(-3deg);
+  }
+  
+  .shoe + .shoe {
+    left: auto;
+    right: 40%;
+    transform: scaleX(-1) skewX(-3deg);
+  }
+  
+  .sleeves {
+    width: 7%;
+    height: 7%;
+    background: var(--shirt);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  
+  

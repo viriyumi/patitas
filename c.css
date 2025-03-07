@@ -24,19 +24,14 @@ html, body {
     border-radius: 100%;
   }
   
-  .hb::before,
-  .ha::after {
-    content: "";
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-  }
+ 
+  
   
   /****/
   .cartoon {
-    --fur: #222;
     
-    --pants: #69c;
+   --fur: #070707; 
+    
   }
   
  
@@ -116,15 +111,6 @@ html, body {
   }
   
   
-  .arms {
-    width: 23%;
-    height: 30%;
-    border: 3vmin solid var(--fur);
-    border-bottom: 2vmin solid transparent;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
   
   
   

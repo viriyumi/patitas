@@ -1,6 +1,6 @@
 html, body {
     overflow: hidden;
-    background: rgba(235, 222, 53, 0.4);
+    background: #8a46;
   }
   .cartoon {
     position: absolute;
@@ -35,23 +35,24 @@ html, body {
   /****/
   .cartoon {
     --fur: #222;
-  
+    
     --pants: #69c;
   }
   
  
   
-  
- 
-  
-  .body::after {
-    width: 30%;
-    height: 100%;
-    right: -20%;
+
+  .body {
+    height: 31%;
+    width: 8%;
     background: var(--shirt);
-    transform: skewX(3deg);
-    transform-origin: bottom left;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
+  
+
+ 
   
   .shorts {
     width: 10%;
@@ -104,7 +105,33 @@ html, body {
     transform: translate(-50%, -50%);
   }
   
+  .sleeves::before,
+  .sleeves::after {
+    width: 100%;
+    height: 200%;
+    background: var(--shirt);
+    transform: rotate(30deg);
+    left: -50%;
+    top: -20%;
+  }
+  
+  
+  .arms {
+    width: 23%;
+    height: 30%;
+    border: 3vmin solid var(--fur);
+    border-bottom: 2vmin solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   
   
   
-  
+  .hands {
+    width: 6%;
+    height: 6%;
+    background: var(--fur);
+    top: 73%;
+    left: 42%;
+  }

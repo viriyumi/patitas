@@ -1,0 +1,56 @@
+html, body {
+    background: #f001;
+  }
+  
+  .cartoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .b {
+    border: 1.5vmin solid black;
+  }
+  /****/
+  .cartoon {
+    --skin: #fdecdf;
+    --cheeks: #f39b89;
+    --shirt: #f00;
+    --line: #000;
+  }
+  
+  
+  .arm {
+    width: 10%;
+    height: 15%;
+    border-radius: 55% 0 0 0; 
+    transform: rotate(44deg);
+    top: 67%;
+    left: 32.25%;
+    background: var(--shirt);
+  }
+  
+  .arm + .arm {
+    transform: scaleX(-1) rotate(44deg);
+    left: auto;
+    right: 31.75%;
+  }
+  
+  
+  .legs {
+    width: 40%;
+    height: 40%;
+    background: var(--line);
+    bottom: 0%;
+    left: 30%;
+    clip-path: polygon(24% 50%, 25.75% 85%, 47.5% 85%, 50% 50%, 53.75% 85%, 75.6% 85%, 79% 50%)
+  }
+  

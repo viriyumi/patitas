@@ -38,13 +38,6 @@ html, body {
     background: var(--shirt);
   }
   
-  .arm + .arm {
-    transform: scaleX(-1) rotate(44deg);
-    left: auto;
-    right: 31.75%;
-  }
-  
-  
   .legs {
     width: 40%;
     height: 40%;

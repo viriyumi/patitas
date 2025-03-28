@@ -1,0 +1,223 @@
+body {
+
+    background-color: #fd9721;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.potatoe_body{
+    background-color: #d1b984;
+    height: 295px;
+    width: 250px;
+    border-radius:260px 300px 260px 260px;
+    border:5px solid #0f1f35;
+    /*position: relative;*/
+    left:0px;
+    top:10px;
+}
+
+   
+.cartoon {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .r {
+    border-radius: 100%;
+  }
+  
+  .hb::before,
+  .ha::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  
+  .cartoon {
+    --skin: #c1a274(0 27% 0%);
+    --teeth: #ee7;
+    --width: 20%;
+  }
+  .head {
+    width: var(--width);
+    height: 30%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: var(--skin);*/
+    border-radius: 10vmin 10vmin 0 0;
+    border-bottom: 0;
+  }
+  
+  .head::before,
+  .head::after {
+    width: 2.5vmin;
+    height: 2.5vmin;
+    background: var(--skin);
+    border-radius: 50%;
+    left: 11%;
+    top: 2.5%;
+  }
+  
+  
+  
+  .mouth {
+    width: 11.25%;
+    height: 11.25%;
+    border-top: 0.5vmin solid;
+    top: 56.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+  }
+  
+  .mouth::after,
+  .mouth::before {
+    width: 20%;
+    height: 20%;
+    border: 0.5vmin solid;
+    transform: translate(10%, -60%) rotate(45deg);
+    background: var(--teeth);
+  }
+  
+  .mouth::after {
+    right: 0;
+    transform: translate(-10%, -60%) rotate(45deg);
+  }
+  
+  
+  
+  .nose {
+    width: 0.5vmin;
+    height: 50%;
+    top: 57%;
+    left: 50%;
+    background: black;
+    transform: translate(-50%, 0);
+  }
+  
+  .nose::after {
+    width: 3vmin;
+    height: 3vmin;
+    border-bottom: 0.5vmin solid;
+    border-right: 0.5vmin solid;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0.25vmin;
+    transform: translate(-50%, -10%) rotate(45deg);
+  }
+  
+  .eye {
+    width: 50%;
+    width: calc(50% + 0.5vmin);
+    height: 20%;
+    border-top: 0.5vmin solid;
+    left: -0.5vmin;
+    top: 57%;
+    overflow: hidden;
+    transform-origin: top right;
+    transform: rotate(6deg);
+  }
+  
+  .eye + .eye {
+    transform-origin: top right;
+    transform: scaleX(-1) rotate(6deg);
+  }
+  
+  .eye::before {
+    width: 120%;
+    height: 70%;
+    border: 0.5vmin solid;
+    transform-origin: top right;
+    transform: rotate(17deg);
+    top: -0.5vmin;
+    left: -20%;
+    background: var(--teeth);
+  }
+
+
+/****/
+.cartoon {
+  --fur: #222;
+  
+  --shirt: #ace;
+  --pants: rgb(89, 55, 241);
+}
+
+
+
+
+.shorts {
+  width: 10%;
+  height: 5%;
+  background: var(--pants);
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.shorts::before {
+  width: 60%;
+  height: 490%;
+  background: var(--pants);
+  transform-origin: top left;
+  transform: skewX(-5deg)
+}
+
+.shorts::after {
+  right: 0;
+  width: 60%;
+  height: 490%;
+  background: var(--pants);
+  transform-origin: top right;
+  transform: skewX(5deg)
+}
+
+.shoe {
+  width: 9%;
+  height: 4%;
+  background: var(--fur);
+  border-radius: 100% 50% 0 0;
+  bottom: 0;
+  left: 40%;
+  transform: skewX(-3deg);
+}
+
+.shoe + .shoe {
+  left: auto;
+  right: 40%;
+  transform: scaleX(-1) skewX(-3deg);
+}
+
+
+
+.hands {
+  width: 15%;
+  height: 3%;
+  background: var(--fur);
+  top: 50%;
+  left: 73%;
+}
+.manita{
+  width: 15%;
+  height: 3%;
+  background: var(--fur);
+  top: 50%;
+  left: 13%;
+}
